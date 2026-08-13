@@ -1,12 +1,16 @@
 const beep = new(window.AudioContext || window.webkitAudioContext)();
 
 export function playBeep(val){
-    if (beep.state === 'suspended') {
+    // turns it back on if user clicked off
+    if (beep.state === 'suspended') {  
        beep.resume();
     }
+
     const oscillator = beep.createOscillator();
     const volume = beep.createGain();
-    oscillator.frequency.value = val * 10 + (Math.floor(Math.random() * 25) + 10)
+
+    // randomly picks frequency 
+    oscillator.frequency.value = val * 12 + (Math.floor(Math.random() * 27) + 10)
     volume.gain.value = 0.02;
     oscillator.connect(volume);
     volume.connect(beep.destination);
