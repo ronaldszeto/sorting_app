@@ -1,7 +1,9 @@
-#root {
+html, #root {
   width: 100%;
   text-align: center;
   font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .app-container {
@@ -11,8 +13,28 @@
   padding: 20px;
 }
 
-.button-bar {
-  margin-bottom: 30px;
+
+.button{
+  display: block;
+  width: 250px;
+  font-family: 'Courier New', Courier, monospace; 
+  background-color: #000000;                      
+  color: #ffffff;                                 
+  text-decoration: none;
+  text-align: flex;
+  position: relative;
+}
+
+.button::before {
+  content: "+------------------------+";
+  display: block;
+  font-weight: bold;
+}
+
+.button::after {
+  content: "+------------------------+";
+  display: block;
+  font-weight: bold;
 }
 
 button {
@@ -32,18 +54,22 @@ button:hover {
 .complex-info p{
   margin: 2px 0; 
   font-weight: 500;
-  color: #555;
+}
+
+.name{
+  color: #777;
 }
 
 .subtitle {
   margin-top: 10px;
   font-style: italic;
-  color: #777;
+  color: #777;  
+  
 }
 
 .bar-container {  /* the bars of the actual sort */
   display: flex;
-  align-items: flex-end; /* Keeps the bars aligned at the bottom */
+  align-items: flex-end; 
   height: 500px;
   width: 100%;
   border-bottom: 2px solid #ccc;
@@ -63,19 +89,39 @@ button:hover {
   display: flex;
 }
 
+
 .algo-card {
-  display: block;            
-  width: 400px;
-  height: 250px;
-  background-color: #ffffff;
-  border: 2px solid #FFD3AC;
-  border-radius: 5px;
+  display: block;
+  width: 300px;
+  font-family: 'Courier New', Courier, monospace; 
+  background-color: #000000;                      
+  color: #ffffff;                                 
   text-decoration: none;
-  color: black;
+  text-align: flex;
+  position: relative;
 }
 
+.algo-card::before {
+  content: "+-----------------------------+";
+  display: block;
+  font-weight: bold;
+}
+
+.algo-card::after {
+  content: "+-----------------------------+";
+  display: block;
+  font-weight: bold;
+}
+
+.card-body {
+  border-left: 2px dashed #ffffff;  /* vertical lines | */
+  border-right: 2px dashed #ffffff;
+  padding: 10px 5px;
+}
+
+
 .card-image-box {
-  background-color: #FFD3AC; 
+  background-color: #000000; 
   width: 100%;
   padding: 20px 0;           
   margin-bottom: 15px;      
@@ -88,4 +134,5 @@ button:hover {
 .card-img {
   height: 100px;
   width: 200px;
+  filter: grayscale(100%)
 }
