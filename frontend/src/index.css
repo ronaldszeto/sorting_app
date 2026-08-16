@@ -87,12 +87,16 @@ button:hover {
 .sorting_name_box {
   /* Container now just handles grouping if needed */
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;   /* pushes boxes to opposite edges with equal space between them */
+  gap: 20px;    /* space between each box */
+  margin:0 auto   /* centers it */
 }
 
 
 .algo-card {
   display: block;
-  width: 300px;
+  width: 298px;
   font-family: 'Courier New', Courier, monospace; 
   background-color: #000000;                      
   color: #ffffff;                                 
@@ -101,14 +105,16 @@ button:hover {
   position: relative;
 }
 
+
+/* added these instead so i could add the little *'s at the corners */ 
 .algo-card::before {
-  content: "+-----------------------------+";
+  content: "X-----------------------------X";
   display: block;
   font-weight: bold;
 }
 
 .algo-card::after {
-  content: "+-----------------------------+";
+  content: "X-----------------------------X";
   display: block;
   font-weight: bold;
 }

@@ -18,8 +18,76 @@ function Home() {
           <h2 className = "name"> Bubble Sort</h2>
           <p className = "subtitle"> mmm bubbles</p> 
           </div>
-        </Link>
+        </Link>     
+
+      <Link to="/bubble-sort" className="algo-card">
+        <div className="card-body">
+          <div className="card-image-box">
+            <img 
+              src="/floating-soap-bubbles-in-various-sizes-isolated-on-white-free-png.webp"
+              className="card-img">
+           </img>
+           </div>
+          <h2 className = "name"> Bubble Sort</h2>
+          <p className = "subtitle"> mmm bubbles</p> 
+          </div>
+        </Link>    
+
+              <Link to="/bubble-sort" className="algo-card">
+        <div className="card-body">
+          <div className="card-image-box">
+            <img 
+              src="/floating-soap-bubbles-in-various-sizes-isolated-on-white-free-png.webp"
+              className="card-img">
+           </img>
+           </div>
+          <h2 className = "name"> Bubble Sort</h2>
+          <p className = "subtitle"> mmm bubbles</p> 
+          </div>
+        </Link>     
+
+              <Link to="/bubble-sort" className="algo-card">
+        <div className="card-body">
+          <div className="card-image-box">
+            <img 
+              src="/floating-soap-bubbles-in-various-sizes-isolated-on-white-free-png.webp"
+              className="card-img">
+           </img>
+           </div>
+          <h2 className = "name"> Bubble Sort</h2>
+          <p className = "subtitle"> mmm bubbles</p> 
+          </div>
+        </Link>     
+
+              <Link to="/bubble-sort" className="algo-card">
+        <div className="card-body">
+          <div className="card-image-box">
+            <img 
+              src="/floating-soap-bubbles-in-various-sizes-isolated-on-white-free-png.webp"
+              className="card-img">
+           </img>
+           </div>
+          <h2 className = "name"> Bubble Sort</h2>
+          <p className = "subtitle"> mmm bubbles</p> 
+          </div>
+        </Link>     
+
+              <Link to="/bubble-sort" className="algo-card">
+        <div className="card-body">
+          <div className="card-image-box">
+            <img 
+              src="/floating-soap-bubbles-in-various-sizes-isolated-on-white-free-png.webp"
+              className="card-img">
+           </img>
+           </div>
+          <h2 className = "name"> Bubble Sort</h2>
+          <p className = "subtitle"> mmm bubbles</p> 
+          </div>
+        </Link>      
+
         </div>
+
+
         
         {/* other sorts */}
     </div>
