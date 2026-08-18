@@ -5,7 +5,7 @@ import { playBeep } from './sound';
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function BubbleSort() {
+function BogoSort() {
   const [array, setArray] = useState([]);
 
   const resetArray = () => {
@@ -40,10 +40,10 @@ function BubbleSort() {
     <div className="app-container">
       <div className="nav-header">
         <Link to="/" className="back-link">← Back to Home</Link>
-        <h1>Bubble Sort Visualizer</h1>
+        <h1>Bogo Sort Visualizer</h1>
 
         <div className="complex-info">
-          <p>Time Complexity (Average): O(n²)</p>
+          <p>Time Complexity: O(n²)</p>
           <p>Space Complexity: O(1)</p>
         </div>
   
@@ -69,4 +69,4 @@ function BubbleSort() {
   );
 }
 
-export default BubbleSort;
+export default BogoSort;

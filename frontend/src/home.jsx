@@ -20,20 +20,26 @@ function Home() {
           </div>
         </Link>     
 
-      <Link to="/bubble-sort" className="algo-card">
+
+
+      <Link to="/bogo-sort" className="algo-card">
         <div className="card-body">
           <div className="card-image-box">
             <img 
-              src="/floating-soap-bubbles-in-various-sizes-isolated-on-white-free-png.webp"
+              src="1f47d.png"
               className="card-img">
            </img>
            </div>
-          <h2 className = "name"> Bubble Sort</h2>
-          <p className = "subtitle"> mmm bubbles</p> 
+          <h2 className = "name"> Bogo Sort</h2>
+          <p className = "subtitle"> Bogos Binted?</p> 
           </div>
         </Link>    
 
-              <Link to="/bubble-sort" className="algo-card">
+
+
+
+
+        <Link to="/bubble-sort" className="algo-card">
         <div className="card-body">
           <div className="card-image-box">
             <img 
@@ -41,8 +47,8 @@ function Home() {
               className="card-img">
            </img>
            </div>
-          <h2 className = "name"> Bubble Sort</h2>
-          <p className = "subtitle"> mmm bubbles</p> 
+          <h2 className = "name"> Merge Sort</h2>
+          <p className = "subtitle"> O(nLogn) my sunshine </p> 
           </div>
         </Link>     
 

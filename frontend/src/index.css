@@ -87,9 +87,9 @@ button:hover {
 .sorting_name_box {
   /* Container now just handles grouping if needed */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;   /* pushes boxes to opposite edges with equal space between them */
-  gap: 20px;    /* space between each box */
+  flex-wrap: wrap;                  
+  justify-content: space-evenly;   /* spaces them */
+  gap: 17px;    /* space between each box */
   margin:0 auto   /* centers it */
 }
 
