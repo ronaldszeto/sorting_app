@@ -20,7 +20,7 @@ function BubbleSort() {
     resetArray();
   }, []);
 
-  const bubbleSort = async () => {
+  const bubbleSort  = async () => {
     let currentArray = [...array];
     for (let i = 0; i < currentArray.length; i++) {
       for (let j = 0; j < currentArray.length - i - 1; j++) {

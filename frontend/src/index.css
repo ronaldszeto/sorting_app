@@ -72,7 +72,7 @@ button:hover {
   align-items: flex-end; 
   height: 500px;
   width: 100%;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 50px solid #000000;
   gap: 1px;
   padding: 10px;
   background-color: #000000;

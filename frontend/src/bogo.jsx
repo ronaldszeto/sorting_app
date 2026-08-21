@@ -38,7 +38,7 @@ function BogoSort() {
 
   const resetArray = () => {
     const newArray = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 8; i++) {
       newArray.push(Math.floor(Math.random() * 500) + 10);
     }
     setArray(newArray);
@@ -55,15 +55,21 @@ function BogoSort() {
   const runBogoSort = async () => {
     let currentArray = [...array];
     let shuffles= 0;
+    const startTime = Date.now();
     while (!sorted(currentArray) ){
       randomize(currentArray);
       playBeep(currentArray[0]);
       setArray([...currentArray]);
+
+      const secondsPassed = ((Date.now() - startTime) / 1000); //gets time by subtracting the current time with when the loop started, then dividing by 1000 to get seconds
+      setTime(secondsPassed);
+
       shuffles++;
       setCounter(shuffles);
-      await sleep(70);
+      await sleep(100);
+      }
     }
-    }
+    
 
 
 
@@ -96,7 +102,10 @@ function BogoSort() {
           ></div>
         ))}
       </div>
-      <p>Shuffles: {counter}</p>
+      <div className="complex-info">
+        <p>Shuffles: {counter}</p>
+        <p>Time: {time} </p>
+      </div>
     </div>
   );
 }
